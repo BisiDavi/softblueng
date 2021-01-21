@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <title>Softblueng | About us</title>
+    <link rel="stylesheet" href="/src/css/index.css" />
+  </head>
+  <body class="container-fluid">
+    <div class="row content">
+      <div class="container-fluid" id="particles-js"></div>
+      <section class="container-fluid hero">
+        <div class="hero-content position-relative">
+          <header class="container">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand">
+                <img
+                  src="./images/softblue_logo.png"
+                  class="h-25 w-25"
+                  alt="site-logo"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div id="menuNav"  class="navbar-nav">
+                  <a class="nav-link text-white" href="#aboutus">
+                    <h4>ABOUT US</h4>
+                  </a>
+                  <a class="nav-link text-white" href="#SERVICES">
+                    <h4>SERVICES</h4>
+                  </a>
+                  <a class="nav-link text-white" href="#CONTACT">
+                    <h4>CONTACT</h4>
+                  </a>
+                </div>
+              </div>
+              <span onclick="showMenuLinks()" id="hamburgerMenu" class="hamburger-menu">
+                <i class="hamburger-bars"></i>
+              </span>
+            </nav>
+          </header>
+          <div class="container">
+            <div class="hero-jumbotron row">
+              <div class="hero-text col-lg-8 col-md-6 col-sm-12">
+                <h1>BUILD SCALABLE</h1>
+                <span class="d-flex">
+                  <h1>ENGINEERING TEAMS</h1>
+                  <div id="typewriter" class="typed-text"></div>
+                </span>
+                <span class="divider divider-pink"></span>
+                <p>
+                  Augment your team with top-class talent assembled with purpose
+                  and scale in mind.
+                </p>
+              </div>
+              <div class="hero-animation col-lg-4 col-md-6 col-sm-12">
+                
+              </div>
+            </div>
+          </div>
+          <div class="sponsorsbrand row flex-column mx-auto">
+            <div class="brand-content d-flex justify-content-between w-100">
+              <p>You are in good company</p>
+              <span class="brand-logos"> </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main class="row bg-white">
+      <section class="our-services container py-5">
+        <div class="row py-5">
+          <div class="col-lg-4">
+            <h1>OUR SERVICES</h1>
+            <span class="divider divider-blue"></span>
+            <p>
+              Softblueng is redefining software development and delivery by
+              focusing on a data-oriented engineering framework that unearths
+              value for the enterprise and de-risks the engagement process
+            </p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="col">
+              <img src="/src/images/profileIcon.svg" alt="profile icon" />
+              <h4>Engineering Team Augmentation</h4>
+              <p>
+                Build a team of top software engineers from Africa and Europe in
+                days not months.
+              </p>
+            </div>
+            <div class="col">
+              <img
+                src="/src/images/machinelearningIcon.svg"
+                alt="machine learning icon"
+              />
+              <h4>Artificial Intelligence & Machine Learning</h4>
+              <p>
+                Products built to extract maximum value, driven by machine power
+                and unmatched intelligence.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col">
+              <img
+                src="/src/images/appDevIcon.svg"
+                alt="application development icon"
+              />
+              <h4>Application Development</h4>
+              <p>
+                Enterprise-grade performant applications built for web and
+                mobile consumption.
+              </p>
+            </div>
+            <div class="col">
+              <img src="/src/images/analyticsIcon.svg" alt="analytics icon" />
+              <h4>Analytics & Big Data</h4>
+              <p>Next generation products driven by intelligent insights.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials"></section>
+      <section class="build-with-us container-fluid">
+        <div class="row py-5">
+          <div class="build-content col-lg-12">
+            <div
+              class="section-backgroundimg"
+              style="transform: translate(0px, 42.29px)"
+            ></div>
+            <div
+              class="text-content mx-auto d-flex flex-column w-50"
+              style="transform: translate(0px, 71.145px)"
+            >
+              <h1>BUILD SOMETHING WITH US</h1>
+              <p>
+                Let’s partner to build amazing products that will excite end
+                users and drive enterprise ambitions.
+              </p>
+              <button class="btn btn-blue">GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="row bg-white py-5">
+      <div class="site-links container pt-5">
+        <div class="row pt-5">
+          <div class="col-lg-3 col-md-3 col-xl-3">
+            <h5>LEARN MORE</h5>
+            <ul class="footer-link">
+              <li><a href="#showcase">Showcase</a></li>
+              <li><a href="#showcase">Clients</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xl-3">
+            <h5>ABOUT US</h5>
+            <ul class="footer-link">
+              <li><a href="#about-softblue">About Softblueng</a></li>
+              <li><a href="#leadership">Leadership</a></li>
+              <li><a href="#softblue-advantage">The Softblue Advantage</a></li>
+              <li><a href="#academy">Academy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xl-6">
+            <h5>NEWSLETTER</h5>
+            <p>
+              Subscribe to our newsletters. <br />
+              We don’t Bite!
+            </p>
+            <form class="d-flex align-items-center">
+              <input
+                type="text"
+                class="form-control form-control-lg mr-2"
+                placeholder="Enter email"
+              />
+              <button class="btn btn-blue">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="row justify-content-between h-50 align-items-center">
+          <div class="col-lg-3 h-50">
+            <img
+              src="/src/images/softblue_logo.png"
+              class="h-100"
+              alt="softblue logo"
+            />
+          </div>
+          <div class="col-lg-3">
+            <h5>LAGOS</h5>
+            <p>Victoria Island, Lagos.</p>
+          </div>
+        </div>
+        <div class="site-address"></div>
+      </div>
+    </footer>   
+  </body>
+</html>
