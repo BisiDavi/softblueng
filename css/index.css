@@ -192,6 +192,11 @@ nav .navbar-brand img.h-25.w-25 {
   background: white;
 }
 
+.sponsorsbrand ul#myTab.nav {
+    border-bottom: none;
+    margin: auto;
+}
+
 #menuNav {
   display: none;
 }
