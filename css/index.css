@@ -1,6 +1,6 @@
 @font-face {
   font-family: Avenir-Next;
-  src: url('/src/font/Metropolis-Regular.otf');
+  src: url('/font/Metropolis-Regular.otf');
 }
 body {
   font-family: Avenir-Next, -apple-system, system-ui, BlinkMacSystemFont,
@@ -341,7 +341,7 @@ section.build-with-us * {
   position: absolute;
   width: 98% !important;
   height: 100%;
-  background-image: url('/src/images/buildWithUs.svg');
+  background-image: url('/images/buildWithUs.svg');
   background-size: cover;
 }
 .build-content .text-content {
