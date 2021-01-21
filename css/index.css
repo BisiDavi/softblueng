@@ -511,3 +511,85 @@ section.about-us.hire-us .row {
   padding: 60px 0px;
   justify-content: center;
 }
+
+#menuTab.about ul {
+  margin: unset !important;
+}
+#menuTab ul > li {
+  margin: 0 25px;
+}
+#menuTab ul > li {
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#menuTab > div {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 2.2s;
+  -webkit-animation-name: page-hero-footer;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 2.2s;
+  -moz-animation-name: page-hero-footer;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-animation-iteration-count: 1;
+  -o-animation-delay: 0s;
+  -o-animation-duration: 2.2s;
+  -o-animation-name: page-hero-footer;
+  -o-animation-timing-function: ease-in;
+  -o-animation-animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 2.2s;
+  animation-name: page-hero-footer;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+#menuTab ul a {
+  color: white;
+}
+#menuTab ul a.active {
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+  padding-top: 10px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+  background: unset !important;
+  border-top: 10px solid white !important;
+  border-top-right-radius: 10px;
+  border: none;
+  border-top-left-radius: 10px;
+}
+
+#menuTab a:hover {
+  border: none;
+}
+
+section.partners-section .partner-text-content{
+  
+}
+
+.about-page.py-5 {
+  overflow: hidden;
+}
+
+.tab-content,
+.about-page {
+  width: 100%;
+}
+.milestone-section.container-fluid {
+  background: #1a1f24;
+  margin: 0;
+  width: 100% !important;
+  color: white;
+  padding: 60px 0px;
+}
