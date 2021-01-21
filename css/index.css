@@ -216,6 +216,7 @@ nav .navbar-brand img.h-25.w-25 {
 
 #menuNav.show {
   display: flex;
+  margin: auto;
 }
 .navbar-nav a h4 {
   font-size: 20px;
