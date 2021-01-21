@@ -136,7 +136,7 @@ span.animationsvg img {
 .hero-content .sponsorsbrand {
   position: absolute;
   z-index: 30;
-  bottom: 0;
+  bottom: -40px;
   width: 100%;
   background: #1a1f24;
   height: 80px;
@@ -462,6 +462,7 @@ footer form button.btn {
 }
 
 /* about page */
+
 #company .divider {
   margin: unset !important;
 }
@@ -549,12 +550,12 @@ section.about-us.hire-us .row {
 
 #menuTab ul a {
   color: white;
-  margin: 0px 30px !important;
+  margin: -10px 30px !important;
 }
 #menuTab ul a.active {
   text-align: center;
   position: relative;
-  margin-top: -10px !important;
+  margin-top: -12px !important;
   padding-top: 10px;
   opacity: 0.7;
   transition: opacity 0.2s;
@@ -565,10 +566,19 @@ section.about-us.hire-us .row {
   transition-timing-function: ease-in;
   transition-delay: 0s;
   background: unset !important;
-  border-top: 10px solid white !important;
-  border-top-right-radius: 10px;
   border: none;
-  border-top-left-radius: 10px;
+}
+
+#myTab li.nav-item a.active::before {
+  content: '';
+  height: 9px;
+  left: 0;
+  width: 120px;
+  top: -18px;
+  background: white;
+  position: absolute;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 #menuTab a:hover {
@@ -628,6 +638,7 @@ section.about-us.hire-us .row {
 .member .linkedin i {
   color: #0e76a8;
   font-size: 2em;
+  text-decoration: none;
 }
 
 .team-members .member {
@@ -653,6 +664,29 @@ section.about-us.hire-us .row {
   -webkit-transition-delay: 0.3s;
   -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+
+.about-page.pt-5 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.staff-gallery.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.staff-gallery div {
+  display: flex;
+  flex-direction: column;
+  height: 600px !important;
+}
+
+.our-clients {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 50px 100px;
 }
 
 @media (min-width: 768px) {
