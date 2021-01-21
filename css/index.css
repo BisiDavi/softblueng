@@ -184,12 +184,17 @@ h4 {
   font-family: 'Bebas Neue', sans-serif;
 }
 
+/* button */
+.btn-white {
+  color: #ea147b;
+  background: #fff;
+  font-weight: 400;
+}
+
 /* nav */
 
 nav .navbar-brand img.h-25.w-25 {
-  height: 70px !important;
-  width: 150px !important;
-  background: white;
+  width: 200px !important;
 }
 
 .sponsorsbrand ul#myTab.nav {
@@ -349,6 +354,7 @@ section.build-with-us * {
   background-image: url('/images/buildWithUs.svg');
   background-size: cover;
 }
+
 .build-content .text-content {
   position: relative;
 }
@@ -369,6 +375,11 @@ footer p {
   color: #88949e;
   padding: 5px 0;
   cursor: pointer;
+}
+
+footer img.footerlogo {
+  width: 200px !important;
+  height: 70px !important;
 }
 
 footer form button.btn {
@@ -463,4 +474,40 @@ footer form button.btn {
 #company .talent-colony button.btn {
   margin: auto !important;
   display: flex;
+}
+
+section.about-us.hire-us {
+  width: 100% !important;
+  height: 400px;
+  background: url('/images/buildWithUs.svg'),
+    linear-gradient(110deg, #27e1f4, #d51571);
+  background-size: auto, auto;
+  color: white;
+  background-size: cover;
+  background-blend-mode: overlay;
+  position: relative;
+}
+
+section.about-us.hire-us .row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.about-us.hire-us .btn-white {
+  width: 220px;
+  margin: auto;
+}
+.hire-us.about-us .text-content p,
+.hire-us.about-us .text-content h1 {
+  text-align: center;
+  color: white;
+}
+
+.hire-us.about-us .text-content {
+  padding: 60px 0px;
+  justify-content: center;
 }
