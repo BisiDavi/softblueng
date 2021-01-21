@@ -193,8 +193,8 @@ nav .navbar-brand img.h-25.w-25 {
 }
 
 .sponsorsbrand ul#myTab.nav {
-    border-bottom: none;
-    margin: auto;
+  border-bottom: none;
+  margin: auto;
 }
 
 #menuNav {
@@ -448,4 +448,19 @@ footer form button.btn {
     font-size: 22px;
     width: 400px;
   }
+}
+
+/* about page */
+#company .divider {
+  margin: unset !important;
+}
+
+#company button.btn {
+  width: 220px !important;
+}
+
+#company .talent-colony .divider,
+#company .talent-colony button.btn {
+  margin: auto !important;
+  display: flex;
 }
