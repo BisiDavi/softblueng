@@ -549,11 +549,12 @@ section.about-us.hire-us .row {
 
 #menuTab ul a {
   color: white;
+  margin: 0px 30px !important;
 }
 #menuTab ul a.active {
   text-align: center;
   position: relative;
-  margin-top: -10px;
+  margin-top: -10px !important;
   padding-top: 10px;
   opacity: 0.7;
   transition: opacity 0.2s;
@@ -574,10 +575,6 @@ section.about-us.hire-us .row {
   border: none;
 }
 
-section.partners-section .partner-text-content{
-  
-}
-
 .about-page.py-5 {
   overflow: hidden;
 }
@@ -592,4 +589,31 @@ section.partners-section .partner-text-content{
   width: 100% !important;
   color: white;
   padding: 60px 0px;
+}
+
+.tab-content p{
+  color: #88949e;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/* tab teams */
+.member .divider.divider-pink {
+    margin: auto;
+}
+
+.ourteams .member {
+    text-align: center;
+}
+
+.member img {
+    margin: 20px auto;
+}
+@media (min-width: 768px) {
+  .jumbo-text {
+    font-size: 58px;
+  }
+  .milestone-section p {
+    font-size: 18px;
+  }
 }
