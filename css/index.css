@@ -136,7 +136,7 @@ span.animationsvg img {
 .hero-content .sponsorsbrand {
   position: absolute;
   z-index: 30;
-  bottom: -40px;
+  bottom: 0px;
   width: 100%;
   background: #1a1f24;
   height: 80px;
@@ -191,10 +191,15 @@ h4 {
   font-weight: 400;
 }
 
+canvas.particles-js-canvas-el {
+  height: 100vh !important;
+}
+
 /* nav */
 
 nav .navbar-brand img.h-25.w-25 {
   width: 200px !important;
+  margin-top: 20px;
 }
 
 .sponsorsbrand ul#myTab.nav {
@@ -697,3 +702,5 @@ section.about-us.hire-us .row {
     font-size: 18px;
   }
 }
+
+/* services page */
