@@ -323,6 +323,79 @@ nav .navbar-brand img.h-25.w-25 {
   transition-delay: 0s;
 }
 
+/* carousel - testimonials */
+.testimonials .owl-carousel .text::before {
+  content: '\201C';
+  font-family: 'Bebas Neue';
+  font-size: 144px;
+  position: absolute;
+  top: -95px;
+  left: 50%;
+  margin: auto;
+  text-align: center;
+}
+.owl-item span {
+  position: absolute;
+  color: white;
+  top: 25%;
+  font-size: 30px;
+  text-align: center;
+  padding: 0px 200px;
+}
+
+.owl-carousel-controls {
+  position: absolute;
+  bottom: 180px;
+  width: 100%;
+}
+.owl-item .backgroundImage,
+.testimonials,
+.owl-carousel,
+.owl-stage-outer {
+  height: 650px !important;
+}
+
+.owl-item {
+  position: relative !important;
+  height: 600px;
+}
+
+.owl-dots span {
+  margin: 0px 20px;
+  color: white !important;
+  height: 50px;
+}
+
+.owl-dot p {
+  display: none;
+}
+
+.owl-dot.active  p {
+  display: block;
+}
+
+.owl-dot:focus {
+  outline: none !important;
+}
+
+.owl-dot.active img{
+  height: 75px;
+  width: 75px;
+}
+.owl-dot img{
+  height: 50px;
+  width: 50px;
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-carousel.owl-loaded {
+  position: relative;
+}
+
 /* services section */
 section.our-services h4 {
   margin: auto;
