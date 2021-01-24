@@ -71,18 +71,29 @@ section.hero {
   background-repeat: no-repeat;
 }
 
-span.animationsvg img {
-  height: 500px;
-  width: 500px;
-  margin-right: -120px;
-  margin-top: -70px;
+.services-page span.animationsvg img {
   float: right;
-  position: absolute;
-  right: -90px;
+  height: 700px;
+  width: 660px;
+  margin-right: -88px;
+  right: 0px;
+  overflow: hidden;
   padding: 0px !important;
-  margin: 0px;
-  top: -50px;
+  top: 0px;
 }
+
+.hero-container {
+  padding-left: 130px !important;
+  position: relative;
+}
+
+.hero-animation.col-lg-5 {
+  height: 620px;
+  width: 1000px;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
 .hero-animation {
   position: relative;
 }
