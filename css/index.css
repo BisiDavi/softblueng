@@ -146,6 +146,11 @@ span.animationsvg img {
   font-size: 18px;
 }
 
+.sponsorsbrand img {
+  width: 120px;
+  margin: -10px 25px;
+}
+
 .divider-pink {
   background: #ea147b;
 }
@@ -339,7 +344,7 @@ nav .navbar-brand img.h-25.w-25 {
   color: white;
   top: 25%;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   padding: 0px 200px;
 }
 
@@ -357,7 +362,23 @@ nav .navbar-brand img.h-25.w-25 {
 
 .owl-item {
   position: relative !important;
-  height: 600px;
+  height: 650px;
+}
+
+.owl-item q {
+  font-size: 24px;
+  line-height: 2;
+  transition: all 0.45s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0, 0, 0, 0.96);
+  transition-delay: 0s;
+}
+
+.owl-item q,
+.owl-dots span p,
+.owl-item {
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .owl-dots span {
@@ -370,7 +391,7 @@ nav .navbar-brand img.h-25.w-25 {
   display: none;
 }
 
-.owl-dot.active  p {
+.owl-dot.active p {
   display: block;
 }
 
@@ -378,11 +399,11 @@ nav .navbar-brand img.h-25.w-25 {
   outline: none !important;
 }
 
-.owl-dot.active img{
+.owl-dot.active img {
   height: 75px;
   width: 75px;
 }
-.owl-dot img{
+.owl-dot img {
   height: 50px;
   width: 50px;
 }
@@ -453,6 +474,10 @@ footer p {
   color: #88949e;
   padding: 5px 0;
   cursor: pointer;
+}
+
+.footer-link li {
+  margin: 10px 0px !important;
 }
 
 footer img.footerlogo {
@@ -548,13 +573,158 @@ footer form button.btn {
 #company button.btn {
   width: 220px !important;
 }
-
+/* talent colony */
 #company .talent-colony .divider,
 #company .talent-colony button.btn {
   margin: auto !important;
   display: flex;
 }
 
+.talent-colony .circle {
+  position: absolute;
+  display: inline-block;
+}
+
+.ease-translate * {
+  transition: all 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.circle-pink {
+  background: #ea147b;
+}
+.circle-dark {
+  background: #1a1f24;
+}
+
+.circle-blue {
+  background: #0fbdce;
+}
+
+.circle-sm {
+  width: 28px;
+  height: 28px;
+}
+.circle-xs {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.circle {
+  display: inline-block;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.talent-colony .circle:first-of-type {
+  top: 50px;
+  left: 18%;
+}
+.talent-colony .circle:nth-of-type(2) {
+  top: 70px;
+  right: 30%;
+}
+
+.talent-colony .circle:nth-of-type(3) {
+  top: 130px;
+  right: 16%;
+}
+
+.talent-colony .circle:nth-of-type(4) {
+  bottom: 130px;
+  left: 265px;
+}
+
+@media only screen and (min-width: 992px) {
+  .talent-colony .container img:first-of-type {
+    top: 130px;
+    left: 70px;
+  }
+  .talent-colony .container img:nth-of-type(2) {
+    width: 164px;
+    top: 180px;
+    left: 0px;
+  }
+
+  .talent-colony .container img:nth-of-type(3) {
+    left: 170px;
+    width: 134px;
+    top: unset;
+    bottom: 30px;
+  }
+
+  .talent-colony .container img:nth-of-type(4) {
+    top: 15px;
+    right: 20%;
+  }
+
+  .talent-colony .container img:nth-of-type(5) {
+    top: 200px;
+    right: -15px;
+  }
+  .talent-colony .container img:nth-of-type(6) {
+    top: 210px;
+    width: 180px;
+    right: 0px;
+  }
+}
+.talent-colony p {
+  font-size: 18px !important;
+  line-height: 2;
+  padding: 0px 120px;
+  margin-bottom: 40px !important;
+  color: #292b2c !important;
+}
+
+.talent-colony img:first-of-type {
+  width: 103px;
+  z-index: 10;
+  top: 155px;
+  left: 27px;
+}
+
+.talent-colony img:nth-of-type(2) {
+  width: 90px;
+  z-index: 5;
+  top: 70px;
+  left: 85px;
+}
+
+.talent-colony img:nth-of-type(5) {
+  width: 103px;
+  z-index: 10;
+  top: 100px;
+  right: 30px;
+}
+
+.talent-colony img:nth-of-type(4) {
+  width: 85px;
+  top: 180px;
+  right: 40%;
+}
+
+.talent-colony img:nth-of-type(3) {
+  left: 37px;
+  width: 60px;
+  top: 40px;
+}
+
+.talent-colony img:nth-of-type(6) {
+  z-index: 5;
+  width: 70px;
+  top: 0;
+  right: 100px;
+}
+
+.talent-colony img {
+  position: absolute;
+  border-radius: 50%;
+  border: 9px solid white;
+}
+
+/* hire us */
 section.about-us.hire-us {
   width: 100% !important;
   height: 400px;
