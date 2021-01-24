@@ -73,13 +73,20 @@ section.hero {
 
 .services-page span.animationsvg img {
   float: right;
-  height: 700px;
+  height: 780px;
   width: 660px;
   margin-right: -88px;
   right: 0px;
   overflow: hidden;
   padding: 0px !important;
   top: 0px;
+  margin-top: -70px;
+}
+.services-page #hamburgerMenu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1000;
 }
 
 .hero-container {
