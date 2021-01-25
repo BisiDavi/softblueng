@@ -241,8 +241,8 @@ canvas.particles-js-canvas-el {
 
 /* nav */
 
-nav .navbar-brand img.h-25.w-25 {
-  width: 200px !important;
+nav .navbar-brand img {
+  width: 200px;
   margin-top: 20px;
 }
 
