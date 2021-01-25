@@ -1059,4 +1059,47 @@ form.contact-form input.form-control {
   margin: 0px 30px 0px 30px;
 }
 
+.form-two,
+.form-one.hide {
+  display: none;
+}
+
+.form-two.show,
+.form-one.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.Devplatforms {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section2.col-lg-6 {
+  margin: 0px 20px;
+  padding: 0px 30px;
+}
+
+#formTwo.show {
+  display: flex;
+  flex-direction: row;
+}
+
+.Devplatforms h4 {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.Devplatforms label {
+  height: 96px;
+  background: #fff;
+  border: 3px solid #e8edf1;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 40px;
+  height: 160px;
+  width: 160px;
+}
+
 /* services page */

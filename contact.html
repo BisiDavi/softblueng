@@ -114,6 +114,7 @@
                     class="form-check-input"
                     type="radio"
                     name="formType"
+                    onclick="selectFormType()"
                     id="teamAugmentation"
                     value="Team Augmentation"
                     checked
@@ -128,6 +129,7 @@
                     type="radio"
                     name="formType"
                     id="oneTimeProject"
+                    onclick="selectFormType()"
                     value="One-Time Project"
                   />
                   <label class="form-check-label" for="oneTimeProject">
@@ -135,7 +137,7 @@
                   </label>
                 </div>
               </div>
-              <div class="form-one col-lg-6">
+              <div id="formOne" class="form-one col-lg-6">
                 <div class="inputgrp d-flex">
                   <input
                     type="text"
@@ -176,7 +178,7 @@
                   rows="10"
                 ></textarea>
               </div>
-              <div class="form-two col-lg-12">
+              <div id="formTwo" class="form-two col-lg-12">
                 <div class="section1">
                   <div class="inputgrp d-flex">
                     <input
@@ -653,6 +655,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/nav.js"></script>
+    <script src="/js/contactform.js"></script>
     <script>
       new Typewriter('#typewriter', {
         strings: ['<h1>FAST</h1>', '<h1>ON-DEMAND</h1>', '<h1>RELIABLY</h1>'],
