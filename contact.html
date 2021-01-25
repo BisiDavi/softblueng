@@ -19,99 +19,524 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <script>
-      particlesJS.load(
-        'particles-js',
-        '/js/particlesConfig.json',
-        function () {
-          console.log('callback - particles.js config loaded');
-        }
-      );
+      particlesJS.load('particles-js', '/js/particlesConfig.json', function () {
+        console.log('callback - particles.js config loaded');
+      });
     </script>
     <title>Softblue | Contact Us</title>
     <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body class="container-fluid">
     <div class="row content">
-    <div class="mainbanner">
-      <div class="container-fluid" id="particles-js"></div>
-      <section class="container-fluid hero">
-        <div class="hero-content position-relative">
-          <header class="container">
-            <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="/src/index.html">
-                <img
-                  src="./images/softblue_logo.png"
-                  class="h-25 w-25"
-                  alt="site-logo"
-                />
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div id="menuNav" class="navbar-nav">
-                  <a class="nav-link text-white" href="/about.html">
-                    <h4>ABOUT US</h4>
-                  </a>
-                  <a class="nav-link text-white" href="/services.html">
-                    <h4>SERVICES</h4>
-                  </a>
-                  <a class="nav-link text-white" href="/contact.html">
-                    <h4>CONTACT</h4>
-                  </a>
+      <div class="mainbanner">
+        <div class="container-fluid" id="particles-js"></div>
+        <section class="container-fluid hero">
+          <div class="hero-content position-relative">
+            <header class="container">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/src/index.html">
+                  <img
+                    src="./images/softblue_logo.png"
+                    class="h-25 w-25"
+                    alt="site-logo"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div id="menuNav" class="navbar-nav">
+                    <a class="nav-link text-white" href="/about.html">
+                      <h4>ABOUT US</h4>
+                    </a>
+                    <a class="nav-link text-white" href="/services.html">
+                      <h4>SERVICES</h4>
+                    </a>
+                    <a class="nav-link text-white" href="/contact.html">
+                      <h4>CONTACT</h4>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  onclick="showMenuLinks()"
+                  id="hamburgerMenu"
+                  class="hamburger-menu"
+                >
+                  <i class="hamburger-bars"></i>
+                </span>
+              </nav>
+            </header>
+            <div class="container">
+              <div class="hero-jumbotron row">
+                <div class="hero-text col-lg-8 col-md-6 col-sm-12">
+                  <h1 class="jumbo-text">
+                    START YOUR PROJECT
+                    <br />
+                    WITHIN 10 DAYS
+                  </h1>
+                  <span class="divider divider-pink"></span>
+                  <p>
+                    Assemble a dedicated team that fits your project's needs, on
+                    demand.
+                  </p>
+                </div>
+                <div class="hero-animation col-lg-4 col-md-6 col-sm-12">
+                  <span class="animationsvg">
+                    <img
+                      src="/images/softblue_iwatch_concept.png"
+                      alt="contact us at softblue"
+                    />
+                  </span>
                 </div>
               </div>
-              <span
-                onclick="showMenuLinks()"
-                id="hamburgerMenu"
-                class="hamburger-menu"
-              >
-                <i class="hamburger-bars"></i>
-              </span>
-            </nav>
-          </header>
-          <div class="container">
-            <div class="hero-jumbotron row">
-              <div class="hero-text col-lg-8 col-md-6 col-sm-12">
-                <h1 class="jumbo-text">START YOUR PROJECT
-                  <br />
-                  WITHIN 10 DAYS
-                </h1>
-                <span class="divider divider-pink"></span>
-                <p>
-                  Assemble a dedicated team that fits your project's needs, on demand.
-                </p>
-              </div>
-              <div class="hero-animation col-lg-4 col-md-6 col-sm-12">
-                <span class="animationsvg">
-                  <img src="/images/softblue_iwatch_concept.png" alt="contact us at softblue">
-                </span>
-              </div>
             </div>
-          </div>          
-        </div>
-      </section>
-    </div>
+          </div>
+        </section>
+      </div>
     </div>
     <main class="row bg-white">
       <section class="contact-form container py-5">
         <div class="row py-5">
-          <div class="col-lg-6 mx-auto">
-            <h1 class="jumbo-text">CONTACT US</h1>
-            <span class="divider divider-blue"></span>
-            <p>
-              Softblueng is redefining software development and delivery by
-              focusing on a data-oriented engineering framework that unearths
-              value for the enterprise and de-risks the engagement process
-            </p>
+          <h1 class="jumbo-text text-left">CONTACT US</h1>
+          <div class="col-lg-12">
+            <form class="contact-form">
+              <div class="radiobutton-group d-flex">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="formType"
+                    id="teamAugmentation"
+                    value="Team Augmentation"
+                    checked
+                  />
+                  <label class="form-check-label" for="teamAugmentation">
+                    Team Augmentation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="formType"
+                    id="oneTimeProject"
+                    value="One-Time Project"
+                  />
+                  <label class="form-check-label" for="oneTimeProject">
+                    One-Time Project
+                  </label>
+                </div>
+              </div>
+              <div class="form-one col-lg-6">
+                <div class="inputgrp d-flex">
+                  <input
+                    type="text"
+                    placeholder="Full Name*"
+                    class="form-control form-control-lg"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="inputgrp d-flex">
+                  <input
+                    type="email"
+                    placeholder="Email*"
+                    class="form-control form-control-lg"
+                  />
+                  <select id="inputState" class="form-control">
+                    <option selected>Number of Resource*</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>4+</option>
+                  </select>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Company*"
+                  id="company"
+                  class="form-control form-control-lg"
+                />
+                <textarea
+                  class="form-control"
+                  placeholder="Message*"
+                  id="TeamAugmentationMessage"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="form-two col-lg-12">
+                <div class="section1">
+                  <div class="inputgrp d-flex">
+                    <input
+                      type="text"
+                      placeholder="Full Name*"
+                      class="form-control form-control-lg"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      class="form-control form-control-lg"
+                    />
+                  </div>
+                  <div class="inputgrp d-flex">
+                    <input
+                      type="email"
+                      placeholder="Email*"
+                      class="form-control form-control-lg"
+                    />
+                    <select id="inputState" class="form-control">
+                      <option selected>Budget*</option>
+                      <option>N10m - N19.99m</option>
+                      <option>N20m - N49.99m</option>
+                      <option>N50m - N99.99m</option>
+                      <option>N100m+</option>
+                    </select>
+                  </div>
+                  <textarea
+                    class="form-control"
+                    id="TeamAugmentationMessage"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="section2">
+                  <p>What Platforms are you interested in?</p>
+                  <div class="Devplatforms">
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="web"
+                      />
+                      <label for="web">
+                        <span class="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="60"
+                            height="55"
+                            viewBox="0 0 60 55"
+                          >
+                            <defs>
+                              <linearGradient
+                                id="webGradient"
+                                x1="-9.799%"
+                                y1="-16.85%"
+                                y2="111.203%"
+                              >
+                                <stop offset="0%" stop-color="#88949E">
+                                  <animate
+                                    class="web-active"
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#88949E"
+                                    to="#27E1F4"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                  <animate
+                                    class="web-passive"
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#27E1F4"
+                                    to="#88949E"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                </stop>
+                                <stop offset="100%" stop-color="#88949E">
+                                  <animate
+                                    class="web-active"
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#88949E"
+                                    to="#D51571"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                  <animate
+                                    class="web-passive"
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#D51571"
+                                    to="#88949E"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                </stop>
+                              </linearGradient>
+                            </defs>
+
+                            <path
+                              fill="url(#webGradient)"
+                              fill-rule="nonzero"
+                              d="M54.285 0H5.715A5.722 5.722 0 0 0 0 5.714V40a5.722 5.722 0 0 0 5.714 5.714H24.03l-.951 5.714h-4.506a1.428 1.428 0 1 0 0 2.857H41.428a1.428 1.428 0 1 0 0-2.857h-4.506l-.951-5.714h18.315A5.722 5.722 0 0 0 60 40V5.714A5.722 5.722 0 0 0 54.286 0zM25.97 51.428l.952-5.714h6.152l.952 5.714H25.97zM57.142 40a2.863 2.863 0 0 1-2.857 2.857H5.715A2.863 2.863 0 0 1 2.856 40v-2.857h54.285V40zm0-5.715H2.857V5.715a2.86 2.86 0 0 1 2.857-2.858h48.571a2.86 2.86 0 0 1 2.857 2.857v28.571zM30 41.428c.385 0 .742-.159 1.015-.413.257-.273.413-.641.413-1.015 0-.371-.159-.743-.413-1.016-.527-.527-1.5-.527-2.028 0A1.5 1.5 0 0 0 28.574 40c0 .37.156.742.413 1.015.27.254.642.413 1.013.413z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <h4>WEB</h4>
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="ios"
+                      />
+                      <label>
+                        <span class="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="64"
+                            viewBox="0 0 50 64"
+                          >
+                            <defs>
+                              <linearGradient
+                                id="IOSGradient"
+                                x1="-9.799%"
+                                y1="-16.85%"
+                                y2="111.203%"
+                              >
+                                <stop offset="0%" stop-color="#88949E">
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#88949E"
+                                    to="#27E1F4"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#27E1F4"
+                                    to="#88949E"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                </stop>
+                                <stop offset="100%" stop-color="#88949E">
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#88949E"
+                                    to="#D51571"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#D51571"
+                                    to="#88949E"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                </stop>
+                              </linearGradient>
+                            </defs>
+
+                            <path
+                              fill="none"
+                              fill-rule="nonzero"
+                              stroke="url(#IOSGradient)"
+                              stroke-width="3"
+                              d="M4.398 26.042c2.528-4.397 7.113-7.173 11.966-7.244l.147-.002c2.087 0 4.058.783 5.798 1.473 1.3.516 2.424.962 3.29.962.77 0 1.886-.44 3.18-.95 1.873-.74 4.204-1.658 6.638-1.658.312 0 .622.015.923.045 2.072.089 7.22.83 10.578 5.744.07.104.097.232.072.355-.025.124-.099.232-.25.328-.976.604-5.841 3.934-5.779 10.223.068 7.741 6.47 10.582 7.234 10.895.216.099.323.345.231.622-.396 1.27-1.571 4.594-3.914 8.018-2.245 3.279-4.79 6.996-8.935 7.073-1.937.036-3.248-.533-4.521-1.084-1.292-.559-2.627-1.137-4.72-1.137-2.2 0-3.602.597-4.958 1.175-1.208.515-2.457 1.047-4.186 1.116-.071.003-.14.004-.21.004-3.68 0-6.366-3.445-9.02-7.282-5.315-7.675-8.371-20.334-3.564-28.676zM36.124 2a.469.469 0 0 1 .483.415c.34 3.107-.786 6.576-3.014 9.279-2.117 2.56-5.217 4.149-8.09 4.149a7.87 7.87 0 0 1-.602-.024.466.466 0 0 1-.426-.403c-.461-3.486 1.288-6.945 3.079-9.02C29.66 3.93 33.186 2.12 36.124 2z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <h4>IOS</h4>
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="android"
+                      />
+                      <label>
+                        <span class="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="64"
+                            height="66"
+                            viewBox="0 0 64 66"
+                          >
+                            <defs>
+                              <path
+                                id="a"
+                                d="M93.5 55.061c.606 0 1.097.491 1.097 1.097V78.98c0 .605-.49 1.096-1.096 1.096h-4.92v7.692a3.231 3.231 0 0 1-6.462 0v-7.692h-4.52v7.692a3.231 3.231 0 0 1-6.463 0v-7.692h-4.852c-.605 0-1.096-.49-1.096-1.096V56.158c0-.606.49-1.097 1.096-1.097h27.217zm-39.269-.005a3.232 3.232 0 0 1 3.232 3.231v13.125a3.231 3.231 0 0 1-6.463 0V58.287a3.231 3.231 0 0 1 3.231-3.23zm51.322 0a3.231 3.231 0 0 1 3.232 3.231v13.125a3.231 3.231 0 1 1-6.463 0V58.287a3.231 3.231 0 0 1 3.231-3.23zm-39.049-7.944a1.098 1.098 0 0 1-1.073-1.324 14.765 14.765 0 0 1 7.203-9.81l-2.284-4.12a.578.578 0 0 1 1.01-.56l2.301 4.151a14.688 14.688 0 0 1 6.2-1.363c2.214 0 4.314.489 6.198 1.363l2.3-4.151a.577.577 0 1 1 1.011.56l-2.283 4.12a14.765 14.765 0 0 1 7.203 9.81 1.098 1.098 0 0 1-1.074 1.324H66.504z"
+                              ></path>
+
+                              <linearGradient
+                                id="androidGradient"
+                                x1="-9.799%"
+                                y1="-16.85%"
+                                y2="111.203%"
+                              >
+                                <stop offset="0%" stop-color="#88949E">
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#88949E"
+                                    to="#27E1F4"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#27E1F4"
+                                    to="#88949E"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                </stop>
+                                <stop offset="100%" stop-color="#88949E">
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#88949E"
+                                    to="#D51571"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                  <animate
+                                    attributeType="XML"
+                                    attributeName="stop-color"
+                                    from="#D51571"
+                                    to="#88949E"
+                                    dur="800ms"
+                                    begin="indefinite"
+                                    keySplines="0 0 0 0.96"
+                                    calcMode="spline"
+                                  ></animate>
+                                </stop>
+                              </linearGradient>
+                            </defs>
+
+                            <g
+                              fill="none"
+                              fill-rule="nonzero"
+                              transform="translate(-48 -28)"
+                            >
+                              <use
+                                fill="#FFF"
+                                fill-rule="evenodd"
+                                xlink:href="#a"
+                              ></use>
+                              <path
+                                stroke="url(#androidGradient)"
+                                stroke-width="3"
+                                d="M90.081 81.577v6.192a4.731 4.731 0 0 1-9.462 0v-6.192h-1.52v6.192a4.731 4.731 0 0 1-9.463 0v-6.192h-3.352a2.596 2.596 0 0 1-2.596-2.596V56.158a2.596 2.596 0 0 1 2.596-2.597h27.217a2.596 2.596 0 0 1 2.596 2.597V78.98a2.596 2.596 0 0 1-2.596 2.596h-3.42zm-35.85-28.02a4.732 4.732 0 0 1 4.732 4.73v13.125a4.731 4.731 0 0 1-9.463 0V58.287a4.731 4.731 0 0 1 4.731-4.73zm51.322 0a4.731 4.731 0 0 1 4.732 4.73v13.125a4.731 4.731 0 0 1-9.463 0V58.287a4.731 4.731 0 0 1 4.731-4.73zm-34.92-18.095c.408-.282.83-.546 1.264-.791l-.575 2.034-.69-1.243zm0 0l-1.595-2.878a2.077 2.077 0 0 1 3.634-2.013l1.654 2.983a16.215 16.215 0 0 1 5.534-.968c1.911 0 3.778.331 5.534.968l1.654-2.983a2.077 2.077 0 1 1 3.634 2.014l-1.594 2.877a16.254 16.254 0 0 1 6.67 10.018 2.598 2.598 0 0 1-2.542 3.132H66.504a2.598 2.598 0 0 1-2.541-3.132 16.254 16.254 0 0 1 6.67-10.018z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <h4>ANDROID</h4>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="service-description">
+                    <p>What best describes the service you want ?</p>
+                    <div class="description-section">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="descriptionRadioOption"
+                          id="Prototype"
+                          value="Prototype"
+                          checked
+                        />
+                        <label class="form-check-label" for="Prototype">
+                          Prototype
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="descriptionRadioOption"
+                          id="CompleteSolution"
+                          value="Complete Solution"
+                        />
+                        <label class="form-check-label" for="CompleteSolution">
+                          Complete Solution
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="descriptionRadioOption"
+                          id="MinimumViableProduct"
+                          value="Minimum Viable Product"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="MinimumViableProduct"
+                        >
+                          Minimum Viable Product
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="descriptionRadioOption"
+                          id="HelpWithEexistingProduct"
+                          value="Help with existing product"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="HelpWithEexistingProduct"
+                        >
+                          Help with existing product
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-dark mx-auto d-flex my-5">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -212,8 +637,16 @@
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"
       integrity="sha512-o6alMAMTI5qAmVC1UvuRPgTl3UOOkP8NZ6212+rq1Oslsuy8Owt9r5Z0Wu0LNxpw/Q8N8ToGiyovHV+kyOulxg=="
