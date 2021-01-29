@@ -455,6 +455,9 @@ section.our-services h4 {
 }
 
 /* build with us section */
+.build-with-us.container-fluid {
+  margin-top: -170px;
+}
 section.build-with-us,
 .build-content {
   height: 50vh;
