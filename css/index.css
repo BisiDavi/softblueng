@@ -1013,7 +1013,7 @@ form.contact-form .form-control::placeholder {
 
 form.contact-form input.form-control {
   -webkit-appearance: none;
-  width: 250px;
+  width: 50%;
   max-width: 100%;
   font-size: 18px;
   border: 3px solid #e8edf1;
@@ -1026,7 +1026,7 @@ form.contact-form input.form-control {
   transition-delay: 0s;
   transition-timing-function: ease-in;
   transition-delay: 0s;
-  margin: 20px;
+  margin: 20px auto;
   height: 70px;
 }
 
@@ -1058,8 +1058,8 @@ form.contact-form input.form-control {
 }
 .contact-form textArea {
   border: 3px solid #e8edf1;
-  width: 500px;
-  margin: 40px 20px 0px 20px;
+  width: 50%;
+  margin: 20px auto;
 }
 .contact-form #company {
   width: 320px;

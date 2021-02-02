@@ -36,7 +36,7 @@
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="/index.html">
                   <img
-                    src="./images/softblue_logo_white.png"
+                    src="/images/softblue_logo_white.png"
                     class="h-25 w-25"
                     alt="site-logo"
                   />
@@ -105,10 +105,13 @@
     <main class="row bg-white">
       <section class="contact-form container py-5">
         <div class="row py-5">
-          <h1 class="jumbo-text text-left">CONTACT US</h1>
           <div class="col-lg-12">
-            <form class="contact-form">
-              <div class="radiobutton-group d-flex">
+            <h1 class="jumbo-text text-center">CONTACT US</h1>
+            <p class="text-center">
+              Leave us a message and we would be in touch in a jiffy
+            </p>
+            <form class="contact-form d-flex flex-column mx-auto">
+              <!-- <div class="radiobutton-group d-flex">
                 <div class="form-check">
                   <input
                     class="form-check-input"
@@ -136,21 +139,24 @@
                     One-Time Project
                   </label>
                 </div>
-              </div>
-              <div id="formOne" class="form-one col-lg-6">
-                <div class="inputgrp d-flex">
-                  <input
-                    type="text"
-                    placeholder="Full Name*"
-                    class="form-control form-control-lg"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Phone"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-                <div class="inputgrp d-flex">
+              </div> -->
+              <div id="formOne" class="form-one col-lg-12">
+                <input
+                  type="text"
+                  placeholder="Full Name*"
+                  class="form-control form-control-lg"
+                />
+                <input
+                  type="text"
+                  placeholder="Phone*"
+                  class="form-control form-control-lg"
+                />
+                <input
+                  type="email"
+                  placeholder="Email*"
+                  class="form-control form-control-lg"
+                />
+                <!-- <div class="inputgrp d-flex">
                   <input
                     type="email"
                     placeholder="Email*"
@@ -164,21 +170,21 @@
                     <option>4</option>
                     <option>4+</option>
                   </select>
-                </div>
+                </div> -->
                 <input
                   type="text"
-                  placeholder="Company*"
-                  id="company"
+                  placeholder="Subject*"
+                  id="subject"
                   class="form-control form-control-lg"
                 />
                 <textarea
                   class="form-control"
-                  placeholder="Message*"
+                  placeholder="Your Message*"
                   id="TeamAugmentationMessage"
                   rows="10"
                 ></textarea>
               </div>
-              <div id="formTwo" class="form-two col-lg-12">
+              <!-- <div id="formTwo" class="form-two col-lg-12">
                 <div class="section1">
                   <div class="inputgrp d-flex">
                     <input
@@ -534,7 +540,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <button type="submit" class="btn btn-dark mx-auto d-flex my-5">
                 Submit
               </button>
@@ -542,12 +548,14 @@
           </div>
         </div>
       </section>
-     <section class="hire-us about-us container-fluid px-0">
+      <section class="hire-us about-us container-fluid px-0">
         <div class="row py-5">
           <div class="text-content mx-auto d-flex flex-column w-50 col-lg-6">
-            <p class="my-3">Let’s help you build the software solution you need to scale your business</p>
-            <h1>WE ARE THE RIGHT TEAM FOR YOUR BUSINESS
-            </h1>
+            <p class="my-3">
+              Let’s help you build the software solution you need to scale your
+              business
+            </p>
+            <h1>WE ARE THE RIGHT TEAM FOR YOUR BUSINESS</h1>
             <button class="btn btn-white my-3">HIRE US</button>
           </div>
         </div>
