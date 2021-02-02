@@ -504,6 +504,9 @@ footer p {
   padding: 5px 0;
   cursor: pointer;
 }
+.openinghours p{
+  font-size:14px;
+}
 
 .footer-link li {
   margin: 10px 0px !important;
