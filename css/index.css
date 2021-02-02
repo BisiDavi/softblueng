@@ -184,7 +184,9 @@ section.hero {
   color: #88949e;
   font-size: 18px;
 }
-
+.services p {
+  font-size: 16px;
+}
 .sponsorsbrand img {
   width: 150px;
   margin: -10px 25px;
