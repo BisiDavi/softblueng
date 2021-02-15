@@ -1011,7 +1011,7 @@ form.contact-form .form-control::placeholder {
   transform: translateY(2px);
 }
 
-form.contact-form input.form-control {
+form.contact-form input.form-control, form.contact-form select, form.contact-form .custom-file-input {
   -webkit-appearance: none;
   width: 50%;
   max-width: 100%;
