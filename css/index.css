@@ -61,12 +61,25 @@ section.hero {
 .mainbanner {
   position: relative;
   height: 100vh;
-  background-color: #1a1f24;
+  background-color: white;
   width: 100% !important;
 }
 
+.homepage .hero-jumbotron .hero-text {
+  position: relative;
+  z-index: 1000;
+}
+.homepage .hero-animation span.animationsvg img {
+  height: 100%;
+  width: 700px;
+  margin-top: 0px;
+  margin-right: 0px;
+  position: absolute;
+  right: -15px;
+}
+
 #particles-js {
-  background-color: #1a1f24;
+  background-color: white;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -126,7 +139,7 @@ section.hero {
   position: relative;
 }
 #typewriter h1 {
-  color: #0fbdce;
+  color: #0e43f0;
 }
 
 #typewriter {
@@ -145,12 +158,12 @@ section.hero {
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
   margin-bottom: 15px;
-  color: #fff;
+  color: black;
 }
 
 .hero-jumbotron .hero-text p {
   width: 400px;
-  color: white;
+  color: black;
   font-size: 18px;
   line-height: 2;
   animation-delay: 0s;
@@ -177,7 +190,7 @@ section.hero {
   z-index: 30;
   bottom: 0px;
   width: 100%;
-  background: #1a1f24;
+  background: rgba(184, 208, 208, 0.18);
   height: 80px;
   padding: 30px 60px;
   text-align: center;
@@ -208,6 +221,12 @@ section.hero {
   border-top-right-radius: 20px;
 }
 
+main {
+  background: rgba(147, 147, 151, 0.18);
+}
+#typewriter .Typewriter__cursor {
+    display: none;
+}
 .hero-content .sponsorsbrand::before {
   content: '';
   position: absolute;
@@ -215,7 +234,7 @@ section.hero {
   right: 0;
   left: 0;
   height: 1px;
-  background: #424c54;
+  background: #c4ccd273;
   animation-delay: 0s;
   animation-duration: 2.5s;
   animation-name: center-spread;
@@ -504,8 +523,15 @@ footer p {
   padding: 5px 0;
   cursor: pointer;
 }
-.openinghours p{
-  font-size:14px;
+.openinghours p {
+  font-size: 14px;
+}
+footer {
+  background: black;
+}
+footer h5 {
+  color: white;
+  font-weight: bold;
 }
 
 .footer-link li {
@@ -1011,7 +1037,9 @@ form.contact-form .form-control::placeholder {
   transform: translateY(2px);
 }
 
-form.contact-form input.form-control, form.contact-form select, form.contact-form .custom-file-input {
+form.contact-form input.form-control,
+form.contact-form select,
+form.contact-form .custom-file-input {
   -webkit-appearance: none;
   width: 50%;
   max-width: 100%;
