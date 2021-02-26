@@ -280,6 +280,18 @@ canvas.particles-js-canvas-el {
 nav .navbar-brand img {
   width: 200px;
   margin-top: 20px;
+  height: 50px;
+}
+
+nav .navbar-brand a{
+  height:80px;
+  width:200px;
+}
+
+nav.navbar.navbar-expand-lg.position-relative {
+    height: 80px;
+    align-items: center;
+    width: 100%;
 }
 
 .sponsorsbrand ul#myTab.nav {
@@ -380,14 +392,14 @@ nav .navbar-brand img {
 
 .hamburger-bars::before {
   content: '';
-  bottom: 8px;
+  bottom: 5px;
   width: 100%;
   background-color: #12709d;
 }
 
 .hamburger-bars::after {
   content: '';
-  bottom: 26px;
+  bottom: 20px;
   width: 100%;
   background-color: #12709d;
   transition: all 0.2s;
@@ -636,6 +648,11 @@ footer form button.btn {
   .hero-section .hero-text p {
     margin: initial;
     line-height: 1.5;
+  }
+  #navbarNavAltMarkup {
+    width: 100%;
+    position: absolute;
+    top: 25px;
   }
 }
 @media (min-width: 768px) {
