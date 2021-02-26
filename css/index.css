@@ -340,7 +340,7 @@ nav .navbar-brand img {
   bottom: 3px;
   width: 18px;
   height: 3px;
-  background: #fff;
+  background:#12709d;
 }
 
 .hamburger-menu.show .hamburger-bars:before {
@@ -376,12 +376,14 @@ nav .navbar-brand img {
 .hamburger-bars::before {
   content: '';
   bottom: 7px;
+background-color:#12709d;
 }
 
 .hamburger-bars::after {
   content: '';
   bottom: 25px;
   width: 30px;
+  background-color:#12709d;
   transition: all 0.2s;
   transition-timing-function: ease;
   transition-delay: 0s;
