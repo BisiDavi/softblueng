@@ -35,7 +35,7 @@ h5 {
 
 .btn-blue {
   color: #fff;
-  background: #0fbdce;
+  background: #12709d;
 }
 .btn {
   font-size: 18px;
@@ -154,7 +154,7 @@ section.hero {
   position: relative;
 }
 #typewriter h1 {
-  color: #0e43f0;
+  color: #12709d;
 }
 
 #typewriter {
@@ -221,11 +221,11 @@ section.hero {
 }
 
 .divider-pink {
-  background: #ea147b;
+  background: #12709d;
 }
 
 .divider-blue {
-  background: #0fbdce;
+  background: white;
 }
 .divider {
   height: 10px;
@@ -283,15 +283,15 @@ nav .navbar-brand img {
   height: 50px;
 }
 
-nav .navbar-brand a{
-  height:80px;
-  width:200px;
+nav .navbar-brand a {
+  height: 80px;
+  width: 200px;
 }
 
 nav.navbar.navbar-expand-lg.position-relative {
-    height: 80px;
-    align-items: center;
-    width: 100%;
+  height: 80px;
+  align-items: center;
+  width: 100%;
 }
 
 .sponsorsbrand ul#myTab.nav {
@@ -1052,6 +1052,9 @@ section.about-us.hire-us .row {
   margin-right: -100px;
   position: absolute;
   right: 0;
+}
+.animationsvg.contact-page img {
+  margin-right: 0px;
 }
 
 .animationsvg {
